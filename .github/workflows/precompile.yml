@@ -1,0 +1,26 @@
+name: precompile
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1.0.0
+      - uses: julia-actions/setup-julia@v1
+        with:
+          version: "1.3.1"
+      - name: "Setup"
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y at-spi2-core libgtk-3-dev xauth xvfb
+      - name: "Precompile"
+        run: xvfb-run julia precompile.jl
+      - name: "Commit changes"
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add statements/
+          git diff-index --quiet HEAD || git commit -m "Update statements"
+      - name: "Push changes"
+        uses: ad-m/github-push-action@fe38f0a751bf9149f0270cc1fe20bf9156854365
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
