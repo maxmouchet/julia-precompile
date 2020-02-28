@@ -2,7 +2,6 @@ using Pkg
 
 Pkg.activate(".")
 Pkg.instantiate()
-Pkg.precompile()
 
 for (name, version) in Pkg.installed()
     output = "statements/$(name)-$(version).jl"
