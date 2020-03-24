@@ -228,6 +228,12 @@ git-tree-sha1 = "cd60d9a575d3b70c026d7e714212fd4ecf86b4bb"
 uuid = "cd3eb016-35fb-5094-929b-558a96fad6f3"
 version = "0.8.13"
 
+[[Highlights]]
+deps = ["DocStringExtensions", "InteractiveUtils", "REPL"]
+git-tree-sha1 = "f823a2d04fb233d52812c8024a6d46d9581904a4"
+uuid = "eafb193a-b7ab-5a9e-9068-77385905fa72"
+version = "0.4.5"
+
 [[IJulia]]
 deps = ["Base64", "Conda", "Dates", "InteractiveUtils", "JSON", "Markdown", "MbedTLS", "Pkg", "Printf", "REPL", "Random", "SoftGlobalScope", "Test", "UUIDs", "ZMQ"]
 git-tree-sha1 = "b60c883405f31b90c5a7b6862e1d21caad5b411a"
@@ -326,6 +332,12 @@ version = "0.4.3"
 
 [[Mmap]]
 uuid = "a63ad114-7e13-5084-954f-fe012c677804"
+
+[[Mustache]]
+deps = ["Printf", "Tables"]
+git-tree-sha1 = "f39de3a12232eb47bd0629b3a661054287780276"
+uuid = "ffc61752-8dc7-55ee-8c37-f3e9cdd09e70"
+version = "0.5.13"
 
 [[NaNMath]]
 git-tree-sha1 = "928b8ca9b2791081dc71a51c55347c27c618760f"
@@ -578,6 +590,18 @@ deps = ["DataAPI", "Random", "Test"]
 git-tree-sha1 = "28807f85197eaad3cbd2330386fac1dcb9e7e11d"
 uuid = "ea10d353-3f73-51f8-a26c-33c1cb351aa5"
 version = "0.6.2"
+
+[[Weave]]
+deps = ["Base64", "Dates", "Highlights", "JSON", "Markdown", "Mustache", "Printf", "REPL", "Requires", "Serialization", "YAML"]
+git-tree-sha1 = "f4c004ae4ca7200a46fe1b454e11a0c7cec107c4"
+uuid = "44d3d7a6-8a23-5bf8-98c5-b353f8df5ec9"
+version = "0.9.4"
+
+[[YAML]]
+deps = ["Base64", "Dates", "Printf"]
+git-tree-sha1 = "c5e2eaa5ce818c5277388377d592eb4c81f27c00"
+uuid = "ddb6d928-2868-570f-bddf-ab3f9cf99eb6"
+version = "0.4.0"
 
 [[ZMQ]]
 deps = ["FileWatching", "Sockets", "ZeroMQ_jll"]
