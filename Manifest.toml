@@ -9,6 +9,12 @@ git-tree-sha1 = "9e62e66db34540a0c919d72172cc2f642ac71260"
 uuid = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
 version = "0.5.0"
 
+[[CSTParser]]
+deps = ["Tokenize"]
+git-tree-sha1 = "a2f9009a81b92d078a682d4a8576adc1f8176e90"
+uuid = "00ebfdb7-1f24-5e51-bd34-a7502290713f"
+version = "2.3.0"
+
 [[CodeTracking]]
 deps = ["InteractiveUtils", "UUIDs"]
 git-tree-sha1 = "cab4da992adc0a64f63fa30d2db2fd8bec40cab4"
@@ -20,6 +26,12 @@ deps = ["JSON", "VersionParsing"]
 git-tree-sha1 = "7a58bb32ce5d85f8bf7559aa7c2842f9aecf52fc"
 uuid = "8f4d0f93-b110-5947-807f-2305c1781a2d"
 version = "1.4.1"
+
+[[DataStructures]]
+deps = ["InteractiveUtils", "OrderedCollections"]
+git-tree-sha1 = "6166ecfaf2b8bbf2b68d791bc1d54501f345d314"
+uuid = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
+version = "0.17.15"
 
 [[Dates]]
 deps = ["Printf"]
@@ -59,6 +71,12 @@ deps = ["Dates", "Mmap", "Parsers", "Unicode"]
 git-tree-sha1 = "b34d7cef7b337321e97d22242c3c2b91f476748e"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.0"
+
+[[JuliaFormatter]]
+deps = ["CSTParser", "DataStructures", "Pkg", "Test", "Tokenize"]
+git-tree-sha1 = "68159f4e0537c45b3e442bd5b1fb5fe738e1d954"
+uuid = "98e50ef6-434e-11e9-1051-2b60c6c9e899"
+version = "0.5.1"
 
 [[JuliaInterpreter]]
 deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
@@ -164,6 +182,11 @@ uuid = "10745b16-79ce-11e8-11f9-7d13ad32a3b2"
 [[Test]]
 deps = ["Distributed", "InteractiveUtils", "Logging", "Random"]
 uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[[Tokenize]]
+git-tree-sha1 = "73c00ad506d88a7e8e4f90f48a70943101728227"
+uuid = "0796e94c-ce3b-5d07-9a54-7f471281c624"
+version = "0.5.8"
 
 [[UUIDs]]
 deps = ["Random", "SHA"]
