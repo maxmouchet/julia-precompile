@@ -12,7 +12,7 @@ for (name, version) in Pkg.installed()
 
     println("Running tests for $name $version")
     try
-        Pkg.test(name, julia_args=["--compile=all", "--trace-compile=$output"])
+        Pkg.test(name, julia_args = ["--compile=all", "--trace-compile=$output"])
     catch e
         @warn e
     end

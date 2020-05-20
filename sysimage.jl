@@ -11,7 +11,7 @@ statements = glob("statements/*.jl")
 
 create_sysimage(
     packages,
-    project=@__DIR__,
-    replace_default=true,
-    precompile_statements_file=statements
+    project = @__DIR__,
+    replace_default = true,
+    precompile_statements_file = statements,
 )
